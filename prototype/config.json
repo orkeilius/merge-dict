@@ -1,0 +1,7 @@
+{
+    "input folder":"./input",
+    "output file":"./output.txt",
+    "filter":{
+        "min":8
+    }
+}
