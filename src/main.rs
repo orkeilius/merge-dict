@@ -9,9 +9,6 @@ use std::io::Error;
 
 const VERSION :&str = "0.1";
 
-
-
-
 fn merge() -> Result<bool, Error> {
     let args: Vec<String> = env::args().collect();
 
@@ -19,9 +16,7 @@ fn merge() -> Result<bool, Error> {
 
     if args.len() < 3 {
         println!("error: missing argument");
-        return Ok(false);
-        
-        
+        return Ok(false); 
     }
     else if args.len() > 3 {
         let result = args[3].parse();
@@ -81,7 +76,7 @@ fn main() {
     }
 
     println!("");
-    println!("merge-dict - a tools to merge dictionary version {}", VERSION );
+    println!("merge-dict - a tools to merge dictionary | version {}", VERSION );
     println!("use : merge-dict <input folder> <output file> [filter]  ");
     println!("");
     println!("input folder : path to folder containing file to merge");
